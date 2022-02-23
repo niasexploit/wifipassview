@@ -1,4 +1,21 @@
 import subprocess
+
+
+banner = """
+          _  .--. _                                     _                
+         :_;: .-':_;                                   :_;               
+.-..-..-..-.: `; .-.  .---.  .--.   .--.  .--.   .-..-..-. .--. .-..-..-.
+: `; `; :: :: :  : :  : .; `' .; ; `._-.'`._-.'  : `; :: :' '_.': `; `; :
+`.__.__.':_;:_;  :_;  : ._.'`.__,_;`.__.'`.__.'  `.__.':_;`.__.'`.__.__.'
+                      : :                                                
+                      :_;                                                
+
+                                                                          
+     [!] wifi password view
+     [!] By : 4NDR0 R4T
+     [!] CODE IS FUN
+"""
+print(banner)
  
 data = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles']).decode('utf-8').split('\n')
 
